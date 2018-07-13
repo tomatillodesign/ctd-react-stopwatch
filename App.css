@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+button {
+  padding: 16px 24px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#clear-button .inactive:hover {
+  cursor: not-allowed;
+}
+
+.stopwatch-app {
+  padding: 60px 40px;
+  border-radius: 8px;
+  margin: 30px;
+  background: #aaa;
+  background: radial-gradient(#1CB5E0 0%, #000851 100%);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.time {
+  font-family:
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Liberation Mono",
+    "Courier New",
+    monospace;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+#start-stop-button {
+  margin-right: 20px;
+}
+
+#start-stop-button.stopped {
+  background: green;
+}
+
+#start-stop-button.running {
+  background: red;
+}
+
+#clear-button.disabled {
+  cursor: not-allowed;
+  color: rgba(255,255,255,.4);
+  border: 2px solid rgba(255,255,255,.4);
+}
+
+#clear-button.disabled:hover {
+  cursor: not-allowed;
+}
